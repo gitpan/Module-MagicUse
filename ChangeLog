@@ -1,0 +1,11 @@
+Revision history for Perl extension Module::MagicUse.
+
+0.1  Mon Oct 14 23:26:28 2002
+	- original version; created by h2xs 1.21 with options
+		-AX -n Module::MagicUse -v 0.1
+
+0.3  Tue Oct 15 18:40:36 2002
+	- cleaned up code
+	- removed debugging
+	- added docs
+	- released on CPAN

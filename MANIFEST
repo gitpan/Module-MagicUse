@@ -1,0 +1,7 @@
+MANIFEST
+README
+Makefile.PL
+test.pl
+MagicUse.pm
+t/01basic.t
+ChangeLog

@@ -1,0 +1,45 @@
+Module/MagicUse version 0.3
+===========================
+
+If you use a constructor this module will try to include the calling module.
+For example
+
+	my $q = CGI->new();
+
+will include the CGI module. The pattern of a construtor is this
+
+	new Module
+
+or
+
+	Module->constructor
+
+So it will explicitly look for a new before what looks like a module name
+if you're using indirect method syntax. However with direct method invocation
+syntax you just need what looks like a module pointing to what looks like a
+method name. This should be fairly reliable since modules and methods can be
+mapped pretty simply to regexes.
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+	Carp
+	IO::File
+	Regexp::Common
+	Text::Balanced
+
+COPYRIGHT AND LICENCE
+
+Copyright (c) 2002, Dan Brook. All Rights Reserved. This module is free
+software. It may be used, redistributed and/or modified under the same terms
+as Perl itself.
